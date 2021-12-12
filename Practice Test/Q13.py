@@ -18,8 +18,7 @@ class Student:
 
     @staticmethod
     def computeAverage(marks):
-        average = sum(marks) / len(marks)
-        print(f"Average: {average}")
+        return sum(marks) / len(marks)
 
 
 s = Student("Jane Doe", 12345, [70, 67, 68])
@@ -28,4 +27,5 @@ print(s.getNB())
 s.addMark(70)
 s.addMark(63)
 print(s.marks)
-Student.computeAverage(s.marks)
+average = Student.computeAverage(s.marks)
+print("Average: ", average)
